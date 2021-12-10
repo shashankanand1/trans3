@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Responsive sidebar submenus</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <div class="header__container">
+            <!-- <img src="img/perfil.jpg" alt="" class="header__img"> -->
+            <img src="img/logo.png" class="nav-icon">
+            <a href="#" class="bhardwaj header__logo">Bhardwaj Transport Service</a>
+
+            <!-- <div class="header__search">
+                <input type="search" placeholder="Search" class="header__input">
+                <i class='bx bx-search header__icon'></i>
+            </div> -->
+
+
+            <div class="branch">
+                <h3>Branch :</h3>
+            </div>
+
+            <i class='user_icon bx bx-user-circle'></i>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <!-- <img class="nav__icon" src="img/logo.png"> -->
+                    <!-- <i class='bx bxs-disc nav__icon'></i> -->
+                    <span class="nav__logo-name"></span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle"></h3>
+
+                        <!-- <a href="#" class="nav__link active">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a> -->
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-home nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                                    <a href="#" class="nav__dropdown-item">Mail</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Profile</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                                    <a href="#" class="nav__dropdown-item">Mail</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-message nav__icon'></i>
+                                <span class="nav__name">Messages</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                                    <a href="#" class="nav__dropdown-item">Mail</a>
+                                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bell nav__icon'></i>
+                                <span class="nav__name">Notifications</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Blocked</a>
+                                    <a href="#" class="nav__dropdown-item">Silenced</a>
+                                    <a href="#" class="nav__dropdown-item">Publish</a>
+                                    <a href="#" class="nav__dropdown-item">Program</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-compass nav__icon'></i>
+                            <span class="nav__name">Explore</span>
+                        </a>
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">Saved</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Log Out</span>
+            </a> -->
+        </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <div class="main">
+        <div class="second_head">
+            <div class="consignment">
+                <h3>Consignment</h3>
+                <div class="header__search">
+                    <input type="search" class="header__input" placeholder="Consignment Inquiry">
+                    <i class='icon_search bx bx-search header__icon'></i>
+                </div>
+            </div>
+        </div>
+        <div class="third_head">
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">CNS NO.</label>
+                <select class="cns_input cns_input1 form-select" id="inputGroupSelect01">
+                      <option selected>Please select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">CNS Date</label>
+                <select class="cns_input cns_input2 form-select" id="inputGroupSelect01">
+                      <option selected>Please select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">Booking Branch</label>
+                <input class="cns_input cns_input3" type="text">
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">Delivery Branch</label>
+                <select class="cns_input cns_input4 form-select" id="inputGroupSelect01">
+                      <option selected>Please select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">Owner's Risk</label>
+                <input type="text" class="cns_input cns_input5">
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">seg:F TL/SUN/LDL/ODC</label>
+                <select class="cns_input cns_input6 form-select" id="inputGroupSelect01">
+                      <option selected>Please select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="cns1 input-group-text" for="inputGroupSelect01">Delivery By</label>
+                <select class="cns_input cns_input7 form-select" id="inputGroupSelect01">
+                      <option selected>Please select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fourth_head">
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignor Code</label>
+            <select class="cns_inputdown cns_inputdown1 form-select" id="inputGroupSelect01">
+                  <option selected>Please select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignor Name</label>
+            <input class="cns_inputdown cns_inputdown2" type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignor Address</label>
+            <input class="cns_inputdown cns_inputdown3 " type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignor Mob No.</label>
+            <input class="cns_inputdown cns_inputdown4 " type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignor GSTIN</label>
+            <input class="cns_inputdown cns_inputdown5 " type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignee Code</label>
+            <select class="cns_inputdown cns_inputdown6 form-select" id="inputGroupSelect01">
+                  <option selected>Please select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignee Name</label>
+            <input class="cns_inputdown cns_inputdown7 " type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignee Mob No.</label>
+            <input class="cns_inputdown cns_inputdown8 " type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignee GSTIN</label>
+            <input class="cns_inputdown cns_inputdown9 " type="text">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="cns2 input-group-text" for="inputGroupSelect01">Consignee Address</label>
+            <input class="cns_inputdown cns_inputdown10 " type="text">
+        </div>
+    </div>
+
+
+    <!--========== MAIN JS ==========-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
